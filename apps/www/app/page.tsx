@@ -14,6 +14,7 @@ import {
 import { buttonVariants } from "@/registry/new-york/ui/button"
 import { Separator } from "@/registry/new-york/ui/separator"
 import DashboardPage from "@/app/examples/dashboard/page"
+import TradingViewWidget from "@/app/charts/page"
 
 export default function IndexPage() {
   return (
@@ -35,6 +36,8 @@ export default function IndexPage() {
           Beautifully designed components that you can copy and paste into your
           apps. Accessible. Customizable. Open Source.
         </PageHeaderDescription>
+        <Link href="/charts" className={cn(buttonVariants({ size: "lg" }))}>
+              Charts
         <div className="flex w-full items-center space-x-4 pb-8 pt-4 md:pb-10">
           <Link href="/docs" className={cn(buttonVariants())}>
             Get Started
@@ -67,6 +70,7 @@ export default function IndexPage() {
           className="hidden dark:block"
         />
       </section>
+      
       <section className="hidden md:block">
         <div className="overflow-hidden rounded-lg border bg-background shadow">
           <DashboardPage />
