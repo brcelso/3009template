@@ -71,6 +71,14 @@ export function MainNav() {
         >
           GitHub
         </Link>
+        <Link
+          href={siteConfig.links.github}
+          className={cn(
+            "hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block"
+          )}
+        >
+          Charts
+        </Link>
       </nav>
     </div>
   )
