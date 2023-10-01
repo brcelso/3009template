@@ -72,9 +72,12 @@ export function MainNav() {
           GitHub
         </Link>
         <Link
-          href={siteConfig.links.github}
+          href="/themes"
           className={cn(
-            "hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block"
+            "transition-colors hover:text-foreground/80",
+            pathname?.startsWith("/themes")
+              ? "text-foreground"
+              : "text-foreground/60"
           )}
         >
           Charts
