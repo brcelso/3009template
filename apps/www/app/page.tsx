@@ -38,6 +38,7 @@ export default function IndexPage() {
         </PageHeaderDescription>
         <Link href="/charts" className={cn(buttonVariants({ size: "lg" }))}>
               Charts
+            </Link>
         <div className="flex w-full items-center space-x-4 pb-8 pt-4 md:pb-10">
           <Link href="/docs" className={cn(buttonVariants())}>
             Get Started
